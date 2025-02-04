@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//pyramid
 class shape{
      protected:
      double length=0, height=0, base=0;
@@ -40,11 +40,31 @@ void pyramid::pyramid_vol(){
     vol= (base*height)/3;
     cout<<"The volume of pyramid is "<<vol<<endl;
 }
+//cone
+class cone: public shape{
+    public:
+    cone(double r, double h);
+    void cone_vol();
+    
+};
+cone::cone(double r, double h){
+    radius=r;
+    height=h;
+};
 
+void cone::cone_vol(){
+    double vol=0;
+    vol=3.1415926*(radius*radius*height)/3;
+    cout<<"The volume of cone is "<<vol<<endl;
+}
 int main(){
-    pyramid smallPyra(2,4);
-    smallPyra.getDimension();
-    smallPyra.pyramid_vol();
+    //pyramid smallPyra(2,4);
+    //smallPyra.getDimension();
+    //smallPyra.pyramid_vol();
+    
+    cone bigcone(5,20);
+    bigcone.getDimension();
+    bigcone.cone_vol();
     return 0;
     
 }
