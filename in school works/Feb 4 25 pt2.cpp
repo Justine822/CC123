@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 //pyramid
 class shape{
@@ -44,7 +45,8 @@ void pyramid::pyramid_vol(){
 class cone: public shape{
     public:
     cone(double r, double h);
-    void cone_vol();
+    //void cone_vol();
+    void cone_area();
     
 };
 cone::cone(double r, double h){
@@ -52,10 +54,15 @@ cone::cone(double r, double h){
     height=h;
 };
 
-void cone::cone_vol(){
-    double vol=0;
-    vol=3.1415926*(radius*radius*height)/3;
-    cout<<"The volume of cone is "<<vol<<endl;
+//void cone::cone_vol(){
+    //double vol=0;
+   // vol=3.1415926*(radius*radius*height)/3;
+   // cout<<"The volume of cone is "<<vol<<endl;
+//}
+void cone::cone_area(){
+    double area=0;
+    area=3.1415926*(pow(r,2)+3.1415926*r(sqrt(pow)));
+    cout<<"The volume of area is "<<area<<endl;
 }
 int main(){
     //pyramid smallPyra(2,4);
@@ -64,7 +71,7 @@ int main(){
     
     cone bigcone(5,20);
     bigcone.getDimension();
-    bigcone.cone_vol();
+    //bigcone.cone_vol();
+    bigcone.cone_area();
     return 0;
     
-}
