@@ -10,6 +10,7 @@ class shape{
 };
 
 shape::shape(double len, double wid, double hgt){
+    cout<<"Initializing shape class"<<endl;
   length=len;
   width=wid;
   height=hgt;
