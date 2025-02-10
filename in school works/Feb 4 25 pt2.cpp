@@ -61,7 +61,7 @@ cone::cone(double r, double h){
 //}
 void cone::cone_area(){
     double area=0;
-    area=3.1415926*(pow(r,2)+3.1415926*r(sqrt(pow)));
+    area=3.1415926*(pow(radius,2))+3.1415926*radius*sqrt(pow(radius,2)+pow(height,2));
     cout<<"The volume of area is "<<area<<endl;
 }
 int main(){
@@ -74,4 +74,4 @@ int main(){
     //bigcone.cone_vol();
     bigcone.cone_area();
     return 0;
-    
+}
