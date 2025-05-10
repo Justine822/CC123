@@ -25,11 +25,11 @@ public class HelloWorld
         
         if((username,password)==(username1,password1))
         {
-            for(int l = 1; l > 0; i++){
-            int money=0 , amount=0;
+            int money=0;
+            for(int l = 0; l <= money; i++){
             
+            Console.WriteLine("");
             Console.WriteLine ("Hello " + username1 + " What do you like to do?");
-            money=money+amount;
             Console.WriteLine ("Amount of Money: "+  money);
             Console.WriteLine ();
             Console.WriteLine ("1 to withdraw or 2 to deposit or 3 to leave");
@@ -58,7 +58,8 @@ public class HelloWorld
                 Console.WriteLine("How much do you like to deposit");
                 Console.Write(": ");
             int deposit = int.Parse(Console.ReadLine());
-             amount= money + Convert.ToInt32(deposit);
+              money= money + Convert.ToInt32(deposit);
+             
                 continue; 
                 
             }
